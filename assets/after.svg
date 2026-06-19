@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Car paint after detailing — deep gloss and shine">
+  <defs>
+    <linearGradient id="aPaint" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0" stop-color="#1FC9BD"/>
+      <stop offset="0.45" stop-color="#10A79D"/>
+      <stop offset="1" stop-color="#063F3C"/>
+    </linearGradient>
+    <linearGradient id="aSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9FFFB" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#E9FFFB" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="aStreak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="url(#aPaint)"/>
+  <!-- sky reflection band -->
+  <rect width="1000" height="300" fill="url(#aSky)"/>
+  <!-- horizon reflection line -->
+  <rect y="296" width="1000" height="10" fill="#ffffff" opacity="0.35"/>
+  <!-- diagonal gloss streak -->
+  <g transform="rotate(-22 500 350)">
+    <rect x="120" y="-200" width="120" height="1100" fill="url(#aStreak)"/>
+    <rect x="300" y="-200" width="46" height="1100" fill="url(#aStreak)" opacity="0.7"/>
+  </g>
+  <!-- body crease line (clean) -->
+  <path d="M0 452 L1000 430" stroke="#063F3C" stroke-width="3" opacity="0.55"/>
+  <path d="M0 448 L1000 426" stroke="#EAFFFB" stroke-width="2" opacity="0.5"/>
+  <!-- door handle (glossy) -->
+  <rect x="600" y="300" width="170" height="58" rx="29" fill="#0C5E59"/>
+  <rect x="612" y="310" width="146" height="30" rx="15" fill="#37C2B6"/>
+  <rect x="620" y="313" width="120" height="9" rx="4.5" fill="#EAFFFB" opacity="0.7"/>
+  <!-- sparkles -->
+  <g fill="#FFFFFF">
+    <path d="M250 200 C262 220 270 228 290 240 C270 252 262 260 250 280 C238 260 230 252 210 240 C230 228 238 220 250 200 Z"/>
+    <path d="M820 470 C828 484 833 489 847 497 C833 505 828 510 820 524 C812 510 807 505 793 497 C807 489 812 484 820 470 Z"/>
+    <circle cx="430" cy="150" r="5"/>
+    <circle cx="700" cy="600" r="4"/>
+    <circle cx="160" cy="430" r="4"/>
+  </g>
+</svg>
